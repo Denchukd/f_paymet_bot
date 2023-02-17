@@ -1,0 +1,25 @@
+{
+  "name": "payment_bot",
+  "version": "1.0.0",
+  "description": "my_first_bot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-js": "^1.0.6",
+    "jquery": "^3.6.3",
+    "node": "^19.4.0",
+    "node-telegram-bot-api": "^0.61.0",
+    "nodemon": "^2.0.20"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.json"
+    ]
+  }
+}
