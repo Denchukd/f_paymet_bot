@@ -5,7 +5,7 @@ const {welcomeNew , welcomeOld , notUderstand ,errorMessage, newPrj , newProject
 const {addJson , addProjectJson, createBtn , sendAppr , requestPaid , saveMsgId , deleteMsg , getPaid , sendRequest , paidRequest} = require('./func.js')
 const {payType, needCheck} = require('./inlineBtn.js')
 const { request } = require('https')
-const $ = require('jquery')
+const $ = require('jquery') 
 
 
 const bot = new TelegramApi(token,{polling:true})
