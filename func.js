@@ -4,9 +4,9 @@ const project = require('./project_name.json')
 const { request } = require('https')
 const { type } = require('os')
 const { text } = require('stream/consumers')
-const token = '5393921454:AAF9GKfrnNUnU96H9GYizBzXJeSWQRGroks'
+const token = '5393921454:AAHct78k9BH3wnQbwYCdsTxNMTKSLcTuqLs'
 const bot = new TelegramApi(token,{polling:false})
-const $ = require('jquery')
+
 
 saveMsg= async (fileName,arrData,type)=>{
     fs.exists(fileName, async function(exists) {

@@ -1,11 +1,11 @@
 const TelegramApi = require('node-telegram-bot-api')
 const fs = require('fs-js')
-const token = '5393921454:AAF9GKfrnNUnU96H9GYizBzXJeSWQRGroks'
+const token = '5393921454:AAHct78k9BH3wnQbwYCdsTxNMTKSLcTuqLs'
 const {welcomeNew , welcomeOld , notUderstand ,errorMessage, newPrj , newProjectAdd , chossePrj ,writeDescription , writePaymentType , writeSum, writeCard , writeDeadLine, checkResult , chosseCheck, createReques, requestSend} = require('./text.js')
 const {addJson , addProjectJson, createBtn , sendAppr , requestPaid , saveMsgId , deleteMsg , getPaid , sendRequest , paidRequest} = require('./func.js')
 const {payType, needCheck} = require('./inlineBtn.js')
 const { request } = require('https')
-const $ = require('jquery') 
+
 
 
 const bot = new TelegramApi(token,{polling:true})
