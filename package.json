@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "deploy": "git pull && npm i && pm2 restart bot"
+    "deploy": "git pull && npm i && pm2 restart payment_bot"
   },
   "keywords": [],
   "author": "",
