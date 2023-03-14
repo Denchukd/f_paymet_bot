@@ -1,6 +1,6 @@
 const TelegramApi = require('node-telegram-bot-api')
 const fs = require('fs-js')
-const token = '5393921454:AAHct78k9BH3wnQbwYCdsTxNMTKSLcTuqLs'
+const token = '5732856063:AAHffRbevyu2Bvto_q9nT4WY0GslbrEOaJE'
 const {welcomeNew , welcomeOld , notUderstand ,errorMessage, newPrj , newProjectAdd , chossePrj ,writeDescription , writePaymentType , writeSum, writeCard , writeDeadLine, checkResult , chosseCheck, createReques, requestSend} = require('./text.js')
 const {addJson , addProjectJson, createBtn , sendAppr , requestPaid , saveMsgId , deleteMsg , getPaid , sendRequest , paidRequest} = require('./func.js')
 const {payType, needCheck} = require('./inlineBtn.js')

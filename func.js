@@ -4,7 +4,7 @@ const project = require('./project_name.json')
 const { request } = require('https')
 const { type } = require('os')
 const { text } = require('stream/consumers')
-const token = '5393921454:AAHct78k9BH3wnQbwYCdsTxNMTKSLcTuqLs'
+const token = '5732856063:AAHffRbevyu2Bvto_q9nT4WY0GslbrEOaJE'
 const bot = new TelegramApi(token,{polling:false})
 
 
