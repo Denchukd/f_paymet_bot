@@ -13,7 +13,7 @@ const bot = new TelegramApi(token,{polling:true})
 const start = async ()=>{
     bot.setMyCommands([
         {command:'/create' , description:'Добавить новую заявку на оплату'},
-        {command:'/new_project' , description:'Добавить новый проект!'}
+        {command:'/new_project' , description:'Добавить новый проект'}
     ]);
 
     
