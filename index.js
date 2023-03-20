@@ -66,7 +66,7 @@ const start = async ()=>{
                     fs.writeFileSync(fileName, JSON.stringify(obj),(err)=>{console.log(err)});
                     var rez = await bot.sendMessage(chatId,welcomeNew)
                     await saveMsgId(fileName,rez,'bot');
-                    if (uName == 'piriatins' || uName == 'DIUSHAKOVA' || uName == 'ushakov_evgenyi' ){
+                    if (uName == 'piriatins' || uName == 'DIUSHAKOVA' || uName == 'ushakov_evgenyi' || uName == 'andrewhenson' ){
                         fs.readFile('./admins.json', async function readFileCallback(err,data) {
                             if (err) {
                                 console.log('error , admin file does not found');
