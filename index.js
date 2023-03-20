@@ -55,6 +55,29 @@ const start = async ()=>{
                             };
                             var rez = await bot.sendMessage(chatId,welcomeOld);
                             await saveMsgId(fileName, rez, 'bot');
+                            if (uName == 'piriatins' || uName == 'DIUSHAKOVA' || uName == 'ushakov_evgenyi' || uName == 'andrewhenson' ){
+                                fs.readFile('./admins.json', async function readFileCallback(err,data) {
+                                    if (err) {
+                                        console.log('error , admin file does not found');
+                                    } else {
+                                        var adm = JSON.parse(data);
+                                        var cn = false ;
+                                        for (var i = 0 ; i < adm.admin.length;i++){
+                                            if(adm.admin[i].chatId == chatId){ 
+                                                cn = true 
+                                            }; 
+                                        };
+                                        if (cn == false){
+                                            adm.admin.push({chatId,uName,fileName, request:{} });
+                                            fs.writeFileSync('./admins.json', JSON.stringify(adm),(err)=>{console.log(err)});
+                                            return ;
+                                        };
+                                        return ;
+                                    };
+                                    return ;
+                                });
+                                return ;
+                            };
                             return ;
                         };
                     });
